@@ -2,9 +2,16 @@
     margin: 0;
     margin:0;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 header {
 background-color: black;
+width: 100%;
 }
 
 header img {
@@ -14,6 +21,8 @@ header img {
 section {
     max-width: 900px;
     min-height: 300px;
+    align-self: center;
+    width: 100%;
 
 }
 #contenedor-saludo {
@@ -37,19 +46,23 @@ section {
     cursor: pointer;
 }
 #contenedor-descripcion {
+    background-color: white; 
+    color: black;
+    padding: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;    
+    
 }
 #contenedor-descripcion .contenido {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
    
 }
 #contenedor-descripcion img {
     height: auto;
-    width: 30vw;
+    width: 25vw;
     border-radius: 10px;
+    margin: 30px;
 }
